@@ -1,0 +1,23 @@
+﻿[JavaScript:{ jsname: "JQuery" }]
+[JavaScript:{ jsname: "Knockout" }]
+﻿﻿[Css:{ path: "~/DesktopModules/ParentReduxModule/dist/styles.css"}]
+[JavaScript:{ path: "~/DesktopModules/ParentReduxModule/dist/runtime.js", priority:100, provider: "DnnFormBottomProvider"}]
+
+[JavaScript:{ path: "~/DesktopModules/ParentReduxModule/dist/polyfills.js", priority:100, provider: "DnnFormBottomProvider"}]
+[JavaScript:{ path: "~/DesktopModules/ParentReduxModule/dist/main.js", priority:100, provider: "DnnFormBottomProvider"}]
+
+[ModuleAction:{controlKey : "Edit", securityAccessLevel : "Edit",  titleKey: "EditModule", localResourceFile: "~/DesktopModules/ParentReduxModule/App_LocalResources/View.resx" }]
+
+<app-root></app-root>
+
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const form = document.querySelector('form');
+        if (form) {
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+            });
+        }
+    });
+</script>
+
